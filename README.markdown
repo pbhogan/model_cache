@@ -15,11 +15,13 @@ Model.updated_at
 # Caches and returns contents of the block based on the Model.updated_at and cache_key.
 Model.cache(cache_key, options = {}, &block)
 
-Model.cached_* # (e.g. User.cached_all) returns a method after passing it through the Model.cache method.
+# Returns a method after passing it through the Model.cache method.
+Model.cached_* # (e.g. User.cached_all)
 
-model_instance.cached_* # Same as Model.cached_*, but on a model instance.
+# Same as Model.cached_*, but on a model instance.
+model_instance.cached_* # (e.g. user.cached_things)
 
-nstallation
+Installation
 ------------
 
 Install with RubyGems:
