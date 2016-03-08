@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = ModelCache::VERSION
   s.authors     = ["Patrick Hogan"]
   s.email       = ["pbhogan@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ModelCache."
-  s.description = "TODO: Description of ModelCache."
+  s.homepage    = "https://github.com/pbhogan/model_cache"
+  s.summary     = "An ActiveRecord extension that allows for caching based on latest updated_at time."
+  s.description = "An ActiveRecord extension that allows for caching based on latest updated_at time."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]

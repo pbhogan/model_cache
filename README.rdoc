@@ -1,7 +1,7 @@
 ModelCache
 =======
 
-This ActiveRecord extension allows for caching based on latest `updated_at` time.
+An ActiveRecord extension that allows for caching based on latest `updated_at` time.
 
 This is particularly useful when some expensive data depends on the entire contents of the table.
 
