@@ -20,6 +20,7 @@ Model.cached_* # (e.g. User.cached_all)
 
 # Same as Model.cached_*, but on a model instance.
 model_instance.cached_* # (e.g. user.cached_things)
+```
 
 Installation
 ------------
