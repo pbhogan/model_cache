@@ -3,7 +3,7 @@ module Cacheable
 
   included do
     after_commit do
-      self.class.updated_at = Time.now.to_f
+      self.class.updated_at = Time.now
     end
   end
 
