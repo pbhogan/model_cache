@@ -27,9 +27,9 @@ module Cacheable
   end
 
 
-  def self.respond_to?(method_sym, include_private = false)
-    if method.to_s =~ /^cached_(.*)$/
-      true
+  def respond_to_missing?(method_sym, include_private = false)
+    if method_sym.to_s =~ /\Acached_(\w+[?!]?)\z/
+      respond_to?($1, include_private)
     else
       super
     end
@@ -72,9 +72,9 @@ module Cacheable
     end
 
 
-    def self.respond_to?(method_sym, include_private = false)
-      if method.to_s =~ /^cached_(.*)$/
-        true
+    def respond_to_missing?(method_sym, include_private = false)
+      if method_sym.to_s =~ /\Acached_(\w+[?!]?)\z/
+        respond_to?($1, include_private)
       else
         super
       end
